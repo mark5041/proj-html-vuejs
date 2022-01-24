@@ -72,8 +72,12 @@ export default {
 .section {
     background-color: $deep_cove;
     background-image: url('../../assets/img/pattern_background.png');
-    background-position-x: right 45%;
+    background-position: 70% 45%;
     color: white;
+}
+
+.container {
+    padding: 100px 0;
 }
 
 .row:nth-child(1) {
