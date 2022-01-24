@@ -129,7 +129,6 @@ a {
             font-size: 1.1em;
         }
         a {
-            padding: 10px 20px;
             &:nth-child(2) {
                 background-color: $science_blue;
             }

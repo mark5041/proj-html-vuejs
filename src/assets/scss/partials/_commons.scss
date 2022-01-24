@@ -13,17 +13,25 @@ html {
 }
 
 .section-spacing {
-    padding: 60px 0;
+    padding: 120px 0;
 }
 
 .btn-yellow {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
     text-transform: uppercase;
     background-color: $Tulip_Tree_LightVibrant;
     border-radius: 60px;
+    cursor: pointer;
 }
 
 .card-icons {
     width: 40px;
     height: 40px;
     color: $yellow_orange;
+}
+
+.title-section > span {
+    font-size: 1em;
 }
