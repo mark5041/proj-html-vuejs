@@ -8,8 +8,22 @@ html {
     font-family: 'Rubik', sans-serif;
 }
 
+.section-gray {
+    background-color: $alabaster;
+}
+
+.section-spacing {
+    padding: 60px 0;
+}
+
 .btn-yellow {
     text-transform: uppercase;
     background-color: $Tulip_Tree_LightVibrant;
     border-radius: 60px;
+}
+
+.card-icons {
+    width: 40px;
+    height: 40px;
+    color: $yellow_orange;
 }

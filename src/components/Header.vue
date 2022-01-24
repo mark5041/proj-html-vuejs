@@ -72,6 +72,7 @@ header {
     height: 90vh;
     background-image: url('../assets/img/1-hero-image.png');
     background-size: cover;
+    background-position: center;
     nav {
         background: transparent;
         padding: 20px 0 10px 0;
