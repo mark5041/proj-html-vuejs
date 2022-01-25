@@ -13,7 +13,7 @@
                     <div class="title-section">
                         <h4>{{element.title}}</h4>
                         <span class="date">{{element.date}}</span>
-                        <span>{{element.argument}}</span>
+                        <p>{{element.argument}}</p>
                     </div>
                 </div>
             </div>
@@ -108,13 +108,16 @@ export default {
         .title-section {
             margin-top: 2em;
             h4 {
-                margin-bottom: 0.5em;
+                margin-bottom: 0;
                 text-transform: capitalize;
                 font-weight: 800;
                 color: $yellow_orange;
             }
             .date {
                 font-size: 0.8em;
+            }
+            p {
+                margin-top: 1em;
             }
         }
     }
@@ -125,9 +128,6 @@ export default {
     .col-12 {
         display: flex;
         justify-content: center;
-        img {
-            max-width: 100%;
-        }
     }
 }
 
