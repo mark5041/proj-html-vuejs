@@ -4,7 +4,8 @@
     <Header />
     <Main />
     <Footer />
-
+    
+    <Backtop v-show="!visible" />
   </div>
 </template>
 
@@ -15,14 +16,33 @@
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
+import Backtop from "./components/Backtop.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Main,
-    Footer
+    Footer,
+    Backtop
   },
+  data() {
+    return {
+      visible: false,
+    }
+  },
+  created() {
+    window.addEventListener('scroll', () => {
+      if(window.pageYOffset > 700)
+      {
+        this.visible = false;
+      }
+      else
+      {
+        this.visible = true;
+      }
+    });
+  }
 };
 </script>
 

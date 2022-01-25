@@ -130,7 +130,7 @@ a {
         }
         a {
             &:nth-child(2) {
-                border: 2px solid $science_blue;
+                border: 1px solid $science_blue;
                 background-color: $science_blue;
             }
             &:nth-child(2):hover, &:nth-child(2):focus {

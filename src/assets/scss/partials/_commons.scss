@@ -20,10 +20,10 @@ html {
 .btn-yellow {
     color: white;
     text-decoration: none;
-    padding: 8px 18px;
+    padding: 9px 19px;
     text-transform: uppercase;
     background-color: $Tulip_Tree_LightVibrant;
-    border: 2px solid $Tulip_Tree_LightVibrant;
+    border: 1px solid $Tulip_Tree_LightVibrant;
     border-radius: 60px;
     &:hover, &:focus {
         color:  $Tulip_Tree_LightVibrant;
