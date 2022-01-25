@@ -28,7 +28,8 @@
                     <div @click="visible = index" v-for="(element, index) in reviewers" :key="index" class="slider-pointer">
 
                         <transition v-on:before-enter="pointBeforeEnter" v-on:enter="pointEnter" v-on:leave="pointLeave" v-bind:css="false">
-                        <div v-show="visible == index" class="selected"></div>
+                        <div v-if="visible == index" class="selected"></div>
+                        <div v-else></div>
                         </transition>
                         
                     </div>
@@ -236,15 +237,16 @@ export default {
     .col-12 {
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
         .slider-pointer {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 15px;
-            height: 15px;
+            width: 20px;
+            height: 20px;
             border: 0.5px solid black;
             border-radius: 50%;
+            cursor: pointer;
             .selected {
                 width: 100%;
                 height: 100%;
