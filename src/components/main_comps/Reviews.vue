@@ -28,8 +28,7 @@
                     <div @click="visible = index" v-for="(element, index) in reviewers" :key="index" class="slider-pointer">
 
                         <transition v-on:before-enter="pointBeforeEnter" v-on:enter="pointEnter" v-on:leave="pointLeave" v-bind:css="false">
-                        <div v-if="visible == index" class="selected"></div>
-                        <div v-else></div>
+                        <div v-show="visible == index" class="selected"></div>
                         </transition>
                         
                     </div>
@@ -90,7 +89,7 @@ export default {
         {
             this.visible = 0;
         }
-      }, 10000);
+      }, 15000);
   },
   methods: {
       
@@ -100,29 +99,29 @@ export default {
             if(this.direction)
             {
                 el.style.opacity = 0
-                el.style.left = '60%'
+                el.style.left = '35%'
             }
             else
             {
                 el.style.opacity = 0
-                el.style.left = '-15%'
+                el.style.left = '6%'
             }
         },
     ForwCardEnter: 
         function (el, done) 
         {
-            Velocity(el, { opacity: 1, left: '21%' }, { duration: 400 }, { complete: done })
+            Velocity(el, { opacity: 1, left: '21%' }, { duration: 300 }, { complete: done })
         },
     ForwCardLeave: 
         function (el, done) 
         {
             if(this.direction)
             {  
-                Velocity(el, { left: '-15%', opacity: 0}, { duration: 400 })
+                Velocity(el, { left: '-6%', opacity: 0}, { duration: 300 })
             }
             else
             { 
-                Velocity(el, { left: '60%', opacity: 0}, { duration: 400 })
+                Velocity(el, { left: '35%', opacity: 0}, { duration: 300 })
             }
             Velocity(el, { display: 'none' }, { complete: done })
         },
