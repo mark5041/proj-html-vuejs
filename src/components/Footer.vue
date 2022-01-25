@@ -114,6 +114,7 @@ export default {
         .icon-container {
             display: flex;
             justify-content: center;
+            margin-bottom: 1em;
             font-size: 2em;
             a {
                 padding: 15px;

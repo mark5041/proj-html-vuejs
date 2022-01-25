@@ -42,7 +42,7 @@
                 <h1>SEM Campains Made Simple With Avada</h1>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit expedita consectetur architecto voluptas</span>
                 <div class="btn-container">
-                    <a class="btn-yellow me-3">buy avada now</a>
+                    <a href="#plan-section"  class="btn-yellow me-3">buy avada now</a>
                     <a class="btn-yellow ms-3">contanct us</a>
                 </div>
             </div>
@@ -130,7 +130,12 @@ a {
         }
         a {
             &:nth-child(2) {
+                border: 2px solid $science_blue;
                 background-color: $science_blue;
+            }
+            &:nth-child(2):hover, &:nth-child(2):focus {
+                color:  $science_blue;
+                background-color: white;
             }
         }
     }

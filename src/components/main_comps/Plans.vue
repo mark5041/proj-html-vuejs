@@ -1,5 +1,5 @@
 <template>
-    <div class="section">
+    <div class="section" id="plan-section">
         <div class="container section-spacing">
             <div class="row">
                 <div class="title-section col-5">
@@ -163,15 +163,20 @@ export default {
             font-size: 1.1em;
             margin: 1em 0;
         }
-        a {
+        .btn-black {
             margin-top: 2em;
             color: black;
             text-decoration: none;
             text-transform: uppercase;
             font-weight: 800;
-            padding: 10px 20px;
+            padding: 9px 19px;
             border: 1px solid black;
             border-radius: 50px;
+            &:hover, &:focus {
+                color:  white;
+                background-color: $Tulip_Tree_LightVibrant;
+                border: 1px solid $Tulip_Tree_LightVibrant;
+            }
         }
     }
 }
