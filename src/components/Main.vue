@@ -6,6 +6,7 @@
       <Plans />
       <News />
       <Reviews />
+      <Clients />
   </main>
 </template>
 
@@ -19,6 +20,7 @@ import Works from "./main_comps/Works.vue";
 import Plans from "./main_comps/Plans.vue";
 import News from "./main_comps/News.vue";
 import Reviews from "./main_comps/Reviews.vue";
+import Clients from "./main_comps/Clients.vue";
 
 export default {
   name: "Main",
@@ -29,6 +31,7 @@ export default {
     Plans,
     News,
     Reviews,
+    Clients,
   },
 };
 </script>
