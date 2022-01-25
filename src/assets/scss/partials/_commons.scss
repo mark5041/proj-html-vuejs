@@ -24,7 +24,14 @@ html {
     text-transform: uppercase;
     background-color: $Tulip_Tree_LightVibrant;
     border-radius: 60px;
+}
+
+a {
     cursor: pointer;
+}
+
+ul {
+    font-size: 1em;
 }
 
 .card-icons {

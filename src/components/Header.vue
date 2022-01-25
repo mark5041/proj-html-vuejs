@@ -7,7 +7,7 @@
             </a>
             <ul class="nav-right-col">
                 <li class="nav-item">
-                    <a class="nav-link">home</a>
+                    <a href="#" class="nav-link">home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">who we are</a>
@@ -84,7 +84,7 @@ header {
     li {
         display: inline-block;
         a {
-            &:not(.btn-yellow, .btn-yellow-sec):hover {
+            &:not(.btn-yellow, .btn-yellow-sec):hover, &:not(.btn-yellow, .btn-yellow-sec):focus {
                 color: $di_serria;
             }
         }

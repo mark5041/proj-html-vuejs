@@ -55,7 +55,7 @@ export default {
 
 .row {
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 50px 0;
     gap: 2em;
     .card {
         flex-basis: calc(100% / 8 - 1.4em);
