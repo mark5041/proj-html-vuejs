@@ -7,7 +7,7 @@
       <News />
       <Reviews />
       <Clients />
-      <Contact />
+      <Contact @show="changeVis($event)" />
   </main>
 </template>
 
@@ -35,6 +35,20 @@ export default {
     Reviews,
     Clients,
     Contact,
+  },
+  props: {
+    show: Boolean
+  },
+  data() {
+    return {
+      visible: null,
+    }
+  },
+  methods: {
+    changeVis(string)
+    {
+      this.$emit('showEvent', string);
+    }
   },
 };
 </script>

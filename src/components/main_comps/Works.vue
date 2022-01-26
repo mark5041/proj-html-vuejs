@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="title-section col-5">
-                    <h2>meet the new agency SEO template from tge avada team</h2>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid mollitia placeat blanditiis! Quae numquam aliquam deleniti doloribus molestias eum nam sint ipsum iusto</span>
+                    <h2>our work</h2>
+                    <span>Send ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</span>
                 </div>
             </div>
             <div class="row">

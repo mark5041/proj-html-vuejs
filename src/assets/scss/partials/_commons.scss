@@ -17,7 +17,7 @@ html {
     padding: 120px 0;
 }
 
-.btn-yellow {
+.btn-yellow, .btn-blue {
     color: white;
     text-decoration: none;
     padding: 9px 19px;
@@ -27,6 +27,15 @@ html {
     border-radius: 60px;
     &:hover, &:focus {
         color:  $Tulip_Tree_LightVibrant;
+        background-color: white;
+    }
+}
+
+.btn-blue { 
+    border: 1px solid $science_blue;
+    background-color: $science_blue;
+    &:hover, &:focus {
+        color:  $science_blue;
         background-color: white;
     }
 }

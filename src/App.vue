@@ -1,11 +1,11 @@
 <template>
   <div id="app">
 
-    <Header />
-    <Main />
+    <Header @showEvent="showContact($event)"/>
+    <Main @showEvent="showContact($event)" :show="visibleContact" />
     <Footer />
-    
-    <Backtop v-show="!visible" />
+    <Backtop v-show="!visibleBtn" />
+    <ContactForm v-show="visibleContact" @showEvent="showContact($event)"/>
   </div>
 </template>
 
@@ -17,6 +17,7 @@ import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 import Backtop from "./components/Backtop.vue";
+import ContactForm from "./components/main_comps/ContactForm.vue";
 
 export default {
   name: "App",
@@ -24,11 +25,13 @@ export default {
     Header,
     Main,
     Footer,
-    Backtop
+    Backtop,
+    ContactForm
   },
   data() {
     return {
-      visible: false,
+      visibleBtn: false,
+      visibleContact: false,
     }
   },
   created() {
@@ -39,12 +42,16 @@ export default {
     {
         if(window.pageYOffset > 700)
         {
-          this.visible = false;
+          this.visibleBtn = false;
         }
         else
         {
-          this.visible = true;
+          this.visibleBtn = true;
         }
+    },
+    showContact(string)
+    {
+      this.visibleContact = string;
     }
   }
 };
