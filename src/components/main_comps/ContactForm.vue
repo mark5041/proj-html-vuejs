@@ -22,7 +22,7 @@
                             <textarea class="box form-control" aria-label="With textarea" placeholder="Message"></textarea>
                         </div>
                         <div class="col-lg-4 mt-5">
-                            <button type="button" class="btn-blue">Send</button>
+                            <button @click="$emit('showEvent', false)" type="button" class="btn-blue">Send</button>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ export default {
             border-bottom: 1px solid white;
             border-radius: 0;
             font-size: 1.3em;
-            padding: 20px 0;
+            padding: 20px 0 10px 0;
         }
 
         textarea.box {
