@@ -32,16 +32,20 @@ export default {
     }
   },
   created() {
-    window.addEventListener('scroll', () => {
-      if(window.pageYOffset > 700)
-      {
-        this.visible = false;
-      }
-      else
-      {
-        this.visible = true;
-      }
-    });
+    window.addEventListener('scroll', this.scrollTop);
+  },
+  methods: {
+    scrollTop() 
+    {
+        if(window.pageYOffset > 700)
+        {
+          this.visible = false;
+        }
+        else
+        {
+          this.visible = true;
+        }
+    }
   }
 };
 </script>

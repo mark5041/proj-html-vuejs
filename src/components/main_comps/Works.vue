@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="row">
-                <div v-for="(element, index) in works[1].image" :key="index" class="card">
+                <div v-tilt="{reverse: true, speed: 500, perspective: 1200}" v-for="(element, index) in works[1].image" :key="index" class="card">
                     <img :src="getURL(element)" alt="">
                 </div>
             </div>
@@ -71,6 +71,10 @@ export default {
       }
   },
   methods: {
+//       let posX = ~((w/2-coorX)*(80/w)) /10;
+//   let posY = ~~((h/2-coorY)*(80/h)) /10;
+
+
       getURL(string)
       {
           return require(`../../assets/img/${string}`);
@@ -111,6 +115,7 @@ export default {
         padding: 0;
         text-align: center;
         align-items: center;
+        box-shadow: 0 0 10px 0px;
         img {
             width: 100%;
         }
