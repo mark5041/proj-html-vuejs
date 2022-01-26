@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="row">
-                <div v-tilt="{reverse: true, speed: 500, perspective: 1200}" v-for="(element, index) in works[1].image" :key="index" class="card">
+                <div v-tilt="{reverse: true, max: 20, speed: 1000, perspective: 1200}" v-for="(element, index) in works[1].image" :key="index" class="card">
                     <img :src="getURL(element)" alt="">
                 </div>
             </div>
